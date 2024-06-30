@@ -1,0 +1,45 @@
+name: sms_email
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  dropdown_button2: ^2.3.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - res/images/
+    - res/fonts/
+
+  fonts:
+    - family: Slussen
+      fonts:
+        - asset: res/fonts/Slussen-Extended-Black.ttf
+          weight: 900
+        - asset: res/fonts/Slussen-Extended-Bold.ttf
+          weight: 800
+        - asset: res/fonts/Slussen-Extended-Semibold.ttf
+          weight: 700
+        - asset: res/fonts/Slussen-Extended-Regular.ttf
+          weight: 600
+        - asset: res/fonts/Slussen-Extended-Medium.ttf
+          weight: 500
+        - asset: res/fonts/Slussen-Extended-Extralight.ttf
+          weight: 300
