@@ -7,10 +7,10 @@ import 'package:sms_email/extensions/number_exten.dart';
 import 'package:sms_email/extensions/string_exten.dart';
 import 'package:sms_email/widgets/sheet_wrapper.dart';
 
-class ConfirmSheet extends StatelessWidget {
+class PhoneConfirmSheet extends StatelessWidget {
   final VoidCallback onOk;
 
-  const ConfirmSheet({super.key, required this.onOk});
+  const PhoneConfirmSheet({super.key, required this.onOk});
 
   @override
   Widget build(BuildContext context) {
@@ -21,28 +21,14 @@ class ConfirmSheet extends StatelessWidget {
             textAlign: TextAlign.center,
             text: const TextSpan(children: [
               TextSpan(
-                  text: "Are you sure you want to send SMS to",
+                  text: "Are you sure you want to send \nSMS to ",
                   style: TextStyle(
                       color: Color(0xFF201A3F),
                       fontFamily: 'Slussen',
                       fontWeight: FontWeight.w400,
                       fontSize: 18)),
               TextSpan(
-                  text: " +91 90876 54321 ",
-                  style: TextStyle(
-                      color: Color(0xFF201A3F),
-                      fontFamily: 'Slussen',
-                      fontWeight: FontWeight.w700,
-                      fontSize: 18)),
-              TextSpan(
-                  text: "and Email to",
-                  style: TextStyle(
-                      color: Color(0xFF201A3F),
-                      fontFamily: 'Slussen',
-                      fontWeight: FontWeight.w400,
-                      fontSize: 18)),
-              TextSpan(
-                  text: " Dummymail@gmail.com",
+                  text: "+91 90876 54321?",
                   style: TextStyle(
                       color: Color(0xFF201A3F),
                       fontFamily: 'Slussen',
@@ -50,7 +36,7 @@ class ConfirmSheet extends StatelessWidget {
                       fontSize: 18)),
             ]),
           ),
-          30.h(),
+          25.h(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -84,7 +70,7 @@ class ConfirmSheet extends StatelessWidget {
               ),
             ],
           ),
-          54.h(),
+          83.h(),
         ],
       ),
     );
